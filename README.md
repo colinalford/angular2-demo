@@ -1,5 +1,13 @@
 # Demo
 
+This project requires node > v.4 and npm > v.3.
+
+You must also install angular-cli
+
+Run `npm install -g angular-cli` in your command prompt
+
+Clone this repo to a directoy, navigate to that directory, then run `npm install`. Follow the instructions below to run the development server.
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
 
 ## Development server
