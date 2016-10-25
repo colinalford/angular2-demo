@@ -1,0 +1,45 @@
+<div class="col-md-8 col-md-offset-2">
+	<form [formGroup]="addContractForm" (ngSubmit)="addContract(addContractForm.value)">
+		<div class="row">
+			<div class="col-xs-12">
+				<h3 class="lead">Add New Contract</h3>
+			</div>
+		</div>
+		<div class="row form-group">
+			<div class="col-sm-6 col-md-4">
+				<label for="shortDescription">Short Description</label><br/>
+				<input formControlName="description" id="shortDescription" class="form-control" type="text">
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<label for="solicitation">Solicitation Number</label><br/>
+				<input formControlName="solicitation" type="text" class="form-control" id="solicitation">
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<label for="agency">Agency</label><br/>
+				<input formControlName="agency" id="agency" class="form-control" type="text">
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<label for="office">Office</label><br/>
+				<input formControlName="office" type="text" class="form-control" id="office">
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<label for="location">Location</label><br/>
+				<input formControlName="location" type="text" class="form-control" id="location">
+			</div>
+			<div class="col-xs-12">
+				<br/>
+				<label for="synopsis">Synopsis</label><br/>
+				<textarea formControlName="synopsis" class="form-control" rows="6"></textarea>
+			</div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-sm-3 col-sm-offset-3">
+				<a routerLink="/" routerLinkActive="active"><button class="btn btn-block btn-danger">Cancel</button></a>
+			</div>
+			<div class="col-sm-3">
+				<button type="submit" class="btn btn-block btn-success">Submit</button>
+			</div>
+		</div>
+	</form>
+</div>

@@ -1,0 +1,31 @@
+<div class="col-xs-12 col-md-8 col-md-offset-2">
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-4">
+			<h2>{{ title }}</h2>
+		</div>
+		<div class="col-sm-2 col-sm-offset-1" >
+			<a routerLink="/add" routerLinkActive="active"><button class="btn btn-block btn-success">Add</button></a>
+		</div>
+	</div>
+	<br/>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Solicitation #</th>
+				<th>Agency</th>
+				<th>Location</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let contract of contracts" (click)="viewContract(contract.id)">
+				<td>{{ contract?.id }}</td>
+				<td>{{ contract?.solicitation }}</td>
+				<td>{{ contract?.agency }}</td>
+				<td>{{ contract?.location }}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+

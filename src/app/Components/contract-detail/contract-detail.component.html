@@ -1,0 +1,37 @@
+<div class="col-md-8 col-md-offset-2">
+	<div class="row">
+		<div class="col-xs-10">
+			<h3 class="lead">Contract Details</h3>
+		</div>
+		<div class="col-xs-2">
+			<a routerLink="/"><button class="btn btn-block btn-primary">Done</button></a>
+		</div>
+		<br/>
+		<div class="col-xs-12">
+			<p>{{ contract?.description }}</p>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<label for="">Solicitation #</label>
+			<p>{{ contract?.solicitation }}</p>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<label for="">Agency</label> 
+			<p>{{ contract?.agency }}</p>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<label for="">Office</label>
+			<p>{{ contract?.office }}</p>
+		</div>
+		<div class="col-xs-6 col-sm-4">
+			<label for="">Location</label>
+			<p>{{ contract?.location }}</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12">
+			<label for="">Synopsis</label>
+			<p>{{ contract?.synopsis }}</p>
+		</div>
+	</div>
+</div>
